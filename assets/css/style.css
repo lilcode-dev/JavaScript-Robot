@@ -1,0 +1,260 @@
+:root{
+	--color: #5f93e8;
+	/* --back: url(https://mcdn.wallpapersafari.com/medium/90/11/F7ekwg.jpg); */
+}
+body{
+	background: linear-gradient(120deg,rgb(255, 255, 255), var(--color));
+	padding: 0px;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	transition: 1s ease-in-out;
+	
+}
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: var(--color);
+	transition: 1s ease-in-out;
+}
+
+.robots {
+	display: flex;
+	justify-content: center;
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg,
+.left_arm-js, 
+.right_arm-js, 
+.left_leg-js, 
+.right_leg-js {
+	 background-color: var(--color);
+	transition: 0.5s ease-in-out;
+
+
+}
+
+.head { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+	/* display: flex; */
+} 
+
+.eyes {
+
+	display: flex;
+	
+}
+
+.head:hover {
+	/* width: 300px; */
+	background-color: var(--color);
+    transition: 1s ease-in-out;
+}
+.js {
+	display: flex;
+	justify-content: center;
+	height: 0px;
+	margin-bottom: 10px;
+    transition: 1s ease-in-out;
+
+}
+.js-js {
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	margin-bottom: 10px;
+    transition: 1s ease-in-out;
+
+}
+.js-img {
+	display: flex;
+	width: 0px;
+    transition: 1s ease-in-out;
+
+	/* height: 50px; */
+
+}
+.js-img-js {
+	display: flex;
+	width: 50px;
+    transition: 1s ease-in-out;
+
+	/* height: 50px; */
+
+}
+
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex; 
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+} 
+.left_arm-js, .right_arm-js { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+} 
+
+.left_arm { 
+	margin-right: 10px; 
+
+} 
+
+.left_arm-js{
+	margin-right: 10px; 
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+	transform: rotate(20deg);
+	transition: 1s ease-in-out;
+}
+.left_arm:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.right_arm { 
+	margin-left: 10px; 
+
+} 
+.right_arm-js { 
+	margin-left: 10px; 
+
+}
+.right_arm-js { 
+	margin-left: 10px; 
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+	transition: 1s ease-in-out;
+	
+} 
+.right_arm:hover {
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+} 
+.torso-js { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+	background-color:var(--color);
+	transition: 1s ease-in-out;
+
+} 
+.lower_body { 
+	display: flex;
+	width: 200px; 
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;
+
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+} 
+.left_leg-js, .right_leg-js { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+} 
+
+.left_leg { 
+	margin-left: 45px; 
+} 
+.left_leg-js { 
+	margin-left: 45px; 
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+	transform: rotate(20deg);
+	transition: 1s ease-in-out;
+	
+} 
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.right_leg { 
+	margin-left: 30px; 
+}
+.right_leg-js { 
+	margin-left: 30px; 
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+	transition: 1s ease-in-out;
+	
+}
+.right_leg:hover {
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: white;  
+} 
+
+.left_eye { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 120px; 
+}
+
+
+
+
+
