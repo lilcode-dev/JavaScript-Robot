@@ -5,10 +5,7 @@ let rightArm = document.querySelector('.right_arm');
 let leftLeg = document.querySelector('.left_leg');
 let rightLeg = document.querySelector('.right_leg');
 let torso = document.querySelector('.torso');
-
-
-
-
+let colors = document.querySelector('.colors');
 
 const jsEffect = () => {
     // console.log('jsEffect Function');
@@ -32,9 +29,18 @@ const jsEffectOff = () => {
     document.documentElement.style.setProperty('--color', '#5f93e8');
 }
 
+const colorsJs = (e) => {
+    let color = e.target.id;
+    console.log(color);
+    document.documentElement.style.setProperty('--color', color);
+
+}
+
 const eventLoad = () => {
     divHead.addEventListener('mouseover', jsEffect);
     divHead.addEventListener('mouseout',jsEffectOff);
+    colors.addEventListener('click', colorsJs);
+
 
 }
 
