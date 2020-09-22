@@ -25,12 +25,12 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	justify-content: left;
-
 	align-content: center;
-
 	width: 50px;
 	height: 350px;
 	cursor: pointer;
+	box-shadow: 4px 4px 5px;
+
 }
 .padding-color {
 	width: 50px;
