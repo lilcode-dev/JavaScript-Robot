@@ -38,5 +38,3 @@ const colorsJs = (e) => {
     divHead.addEventListener('mouseout',jsEffectOff);
     colors.addEventListener('click', colorsJs);
 })();
-
-eventLoad();
