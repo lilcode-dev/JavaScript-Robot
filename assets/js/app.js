@@ -1,14 +1,13 @@
-let divJs = document.querySelector('.js'); 
-let divHead = document.querySelector('.head');
-let leftArm = document.querySelector('.left_arm');
-let rightArm = document.querySelector('.right_arm');
-let leftLeg = document.querySelector('.left_leg');
-let rightLeg = document.querySelector('.right_leg');
-let torso = document.querySelector('.torso');
-let colors = document.querySelector('.colors');
+let divJs = document.querySelector('.js'),
+    divHead = document.querySelector('.head'),
+    leftArm = document.querySelector('.left_arm'),
+    rightArm = document.querySelector('.right_arm'),
+    leftLeg = document.querySelector('.left_leg'),
+    rightLeg = document.querySelector('.right_leg'),
+    torso = document.querySelector('.torso'),
+    colors = document.querySelector('.colors');
 
 const jsEffect = () => {
-    // console.log('jsEffect Function');
     divJs.setAttribute('class', 'js-js');
     divJs.firstElementChild.setAttribute('class', 'js-img-js');
     leftArm.setAttribute('class', 'left_arm-js');
@@ -31,17 +30,13 @@ const jsEffectOff = () => {
 
 const colorsJs = (e) => {
     let color = e.target.id;
-    console.log(color);
     document.documentElement.style.setProperty('--color', color);
-
 }
 
-const eventLoad = () => {
+(() => {
     divHead.addEventListener('mouseover', jsEffect);
     divHead.addEventListener('mouseout',jsEffectOff);
     colors.addEventListener('click', colorsJs);
-
-
-}
+})();
 
 eventLoad();
