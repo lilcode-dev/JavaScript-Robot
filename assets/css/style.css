@@ -1,6 +1,5 @@
 :root{
 	--color: #5f93e8;
-	/* --back: url(https://mcdn.wallpapersafari.com/medium/90/11/F7ekwg.jpg); */
 }
 body{
 	background: linear-gradient(120deg,rgb(255, 255, 255), var(--color));
@@ -17,10 +16,78 @@ h1 {
 	color: var(--color);
 	transition: 1s ease-in-out;
 }
+.container {
+	display: flex;
+	flex-direction: row;
+	/* padding: px; */
+}
+.colors {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+
+	align-content: center;
+
+	width: 50px;
+	height: 350px;
+	cursor: pointer;
+}
+.padding-color {
+	width: 50px;
+	height: 50px;
+	padding-top: 80px;
+}
+.blue {
+	background:#00FFFF;
+	width: 50px;
+	height: 50px;
+}
+.red {
+	background: #FF4500;
+	width: 50px;
+	height: 50px;
+}
+.pink {
+	background: #FF00FF;
+	width: 50px;
+	height: 50px;
+}
+.yellow {
+	background-color: #FFD700;
+	width: 50px;
+	height: 50px;
+}.green{
+	background: #008B8B;
+	width: 50px;
+	height: 50px;
+}
+.springGreen {
+	background: #00FF7F;
+	width: 50px;
+	height: 50px;
+}
+.lima {
+	background: #00FF00;
+	width: 50px;
+	height: 50px;
+
+}
+.purple { 
+	background: #6A1B9A;
+	width: 50px;
+	height: 50px;
+}
+.color-robot { 
+	background: #5f93e8;
+	width: 50px;
+	height: 50px;
+}
+
 
 .robots {
 	display: flex;
 	justify-content: center;
+	padding: 10px;
 }
 
 .head, 
@@ -253,8 +320,3 @@ h1 {
 	top: 100px; 
 	left: 120px; 
 }
-
-
-
-
-
